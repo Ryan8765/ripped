@@ -1,0 +1,72 @@
+/*******************************
+		Main Elements
+**********************************/
+
+html, body {
+	background-color: black;
+}
+
+
+h1 {
+	font-family: font-family: 'EB Garamond', serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #F73042;
+}
+
+nav {
+	z-index: 100;
+}
+
+
+/*******************************
+		Classes 
+**********************************/
+
+.ripped {
+	color: #AE212E;
+	font-weight: bolder;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+.footer-no-content {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -125px;
+}
+
+.title-main {
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	top: 50%;
+	width: 300px;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+
+
+
+/*******************************
+		Id's
+**********************************/
+#footer p {
+	font-size: .8em;
+	width: 250px;
+	color: #929292;
+}
+
+
+
+
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+	color: #F73042;
+}
+

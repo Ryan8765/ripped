@@ -1,0 +1,549 @@
+/*******************************
+		Main Elements
+**********************************/
+
+
+html, body {
+	background-color: black;
+}
+
+h1 {
+	// font-family: 'EB Garamond', serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: $font-color--main;
+}
+
+nav {
+	z-index: 100;
+}
+
+
+table {
+	@include border-radius(10px);
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		font-size: .95em;
+		padding: 4px 8px 4px 8px;
+		@include border-radius(4px);
+		margin-top: 2px;
+		border: 1px dotted black;
+	}
+
+	td {
+		padding: 10px;
+	}
+
+	th {
+		padding: 10px;
+	}
+	caption {
+		color: white;
+	}
+}
+
+
+button a {
+	color: white;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.input-errors {
+	background-color: #FFB2B2 !important;
+	border: 2px solid red !important;
+}
+
+
+
+
+
+
+
+
+/*******************************
+		Classes 
+**********************************/
+
+.log-workout-exercises li {
+	background-color: white;
+}
+
+
+.success-alert-box {
+	display: none;
+	text-align: center;
+	margin-bottom: 20px;
+
+	.success {
+		width: 150px;
+		display: inline;
+	}
+
+}
+
+
+
+.workout-title {
+	border: 1px solid white;
+	background-color: #333333;
+	margin-bottom: 30px;
+	margin-top: 10px;
+
+	padding: 10px;
+}
+
+.log-workout-exercises {
+	border: 1px solid white;
+	margin-bottom: 30px;
+	margin-top: 10px;
+
+	padding: 10px 10px 40px 10px;
+
+}
+
+.title-description {
+	color: #808080;
+}
+
+.row .stats-section {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.rest-clock {
+	font-size: 2.5em;
+	color: white;
+
+
+	&:hover {
+		color: #B4B4B4;
+		cursor: pointer;
+	}
+}
+
+.todays-sets {
+	a {
+		text-decoration: none;
+		color:black;
+	}
+}
+
+.gain-buttons {
+	button {
+		width: 250px !important;
+	}
+}
+
+.date-format {
+	font-style: italic;
+	font-size: .9em;
+	color: #B4B4B4;
+}
+
+.ripped {
+	color: #AE212E;
+	font-weight: bolder;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+.footer-no-content {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -125px;
+	width: 250px;
+}
+
+.title-main {
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	top: 50%;
+	width: 300px;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.margin-top {
+	margin-top: 30px;
+}
+
+.margin-bottom {
+	margin-bottom: 30px;
+}
+
+.white {
+	color: white;
+}
+
+.workout-exercises {
+	display: none;
+}
+
+
+.muscle-group {
+	background-color:#333333;
+	@include border-radius(10px);
+
+	h4 {
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #333333;
+		width: 100%;
+		color:$font-color--main;
+		border: 1px solid white;
+	}
+
+	h4:hover {
+		cursor: pointer;
+	}
+}
+
+
+
+.muscle-exercises {
+	@include border-radius(10px);
+
+	ul {
+		margin-left: 0;
+	}
+}
+
+
+.log-workout-exercises .very-hard {
+	background-color: #DD0202;
+}
+
+.log-workout-exercises .hard {
+	background-color: #FFB0B0;
+}
+
+.log-workout-exercises .medium {
+	background-color: #FDFF3E;
+}
+
+.log-workout-exercises .easy {
+	background-color: #ACFFAA;
+}
+
+.log-workout-exercises .very-easy {
+	background-color: #10E100;
+}
+
+.stats-help {
+	font-size: 1.3em;
+
+	&:hover {
+		color: #888888;
+		cursor: pointer;
+	}
+
+}
+
+.add-exercise {
+	margin-right: 10px;
+	color: white;
+	height: 25px;
+	padding-right: 10px;
+	padding-left: 5px;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -15px;
+
+	&:hover {
+		color: #23F900;
+	}
+}
+
+.delete-workout {
+	margin-right: 10px;
+	color: white;
+	height: 25px;
+	padding-right: 10px;
+	padding-left: 5px;
+	position: absolute;
+	right: -10px;
+	top: 50%;
+	margin-top: -15px;
+
+	&:hover {
+		color: #23F900;
+	}
+}
+
+.fa-plus-square {
+	font-size: 2.5em;
+	&:hover {
+		color: #8F8F8F; 
+	}
+}
+
+
+
+.margin-large {
+	margin-top: 75px;
+}
+
+.registration-form {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+	padding: 10px;
+}
+
+
+.timer-container {
+	display: none;
+	background-color: #FFFFFF;
+	border: 2px solid white;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+
+	h4 {
+		color: black;
+	}
+
+	@include border-radius(10px);
+
+	input {
+		margin-left: auto;
+		width: 100px;
+		margin-right: auto;
+		font-weight: bolder;
+	}
+
+	button {
+		border: 1px solid #717171;
+	}
+}
+
+.success {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	font-size: 1em;
+}
+
+.timer {
+	background-color: white;
+	border-left: 3px solid #808080;
+	border-top: 3px solid #808080;
+	border-right: 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	position: fixed;
+	top: 0;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 100;
+	
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.timeTo span {
+	color: white;
+}
+
+.timer.centered.timeTo.timeTo-white {
+    height: 40px;
+}
+
+.log-exercise-container {
+	padding-bottom:50px;
+}
+
+.exercises {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.previous-workout-list {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+	}
+
+	li {
+		border: 2px solid white;
+		padding: 5px 10px 5px 10px;
+		font-size: 1.2em;
+		background-color: #3E3E3E;
+
+	}
+
+	li:hover {
+		cursor: pointer;
+	}
+}
+
+.stats-log {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+		margin-bottom: 30px;
+
+		li {
+			font-size: .95em;
+			padding: 20px 8px 4px 8px;
+			@include border-radius(4px);
+			margin-top: 2px;
+			border: 1px dotted black;
+			position: relative;
+		}
+	}
+}
+
+
+.delete-set {
+	position: absolute;
+	right: 2px;
+	top: -5px;
+	font-size: 20px;
+
+	&:hover {
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.edit-set {
+	position: absolute;
+	left: 2px;
+	top: -5px;
+	font-size: 20px;
+
+	&:hover {
+		color: white;
+		cursor: pointer;
+	}
+}
+
+
+.border-container {
+	border: 2px solid white;
+}
+
+
+
+/*******************************
+		Id's
+**********************************/
+#footer p {
+	font-size: .8em;
+	color: #929292;
+}
+
+#footer {
+	margin-top: 40px;
+}
+
+.log-exercise {
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 1px solid white;
+	margin-right: 20px;
+	margin-left: 20px;
+
+
+	label {
+		color: white;
+	}
+}
+
+
+#previous-workouts {
+	display:none;
+}
+
+
+
+
+
+
+
+
+/*******************************
+		Foundation Changes
+**********************************/
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+	color: $font-color--main;
+}
+
+li.name {
+    background-color: #333333 !important;
+}
+
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background: $background-color--active;
+}
+
+
+//accordian
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background-color: #707070;
+	color: white;
+	border: 1px solid white;
+}
+
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	color: black;
+}
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+	color: black;
+}
+
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+	background-color: #E2E2E2;
+}
+
+
+.login-box {
+  background: #fff;
+  border: 1px solid #ddd; 
+  margin: 100px 0;
+  padding: 40px 20px 0 20px;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+	.registration-form {
+		width: 60%;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.registration-form {
+		width: 95%;
+	}
+}

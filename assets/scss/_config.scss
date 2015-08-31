@@ -1,0 +1,34 @@
+// ==================================
+// Global Config variables
+// ==================================
+//$background-color--container:#3F3F3F;
+
+/* Fonts
+=====================================*/
+$font-color--main:#F73042;
+$font-color--secondary: #9F1E2A;
+
+
+
+/* Backgrounds
+=====================================*/
+$background-color--active: #8E8E8E;
+
+
+/* border-colors:
+=====================================*/
+
+
+
+
+/* pseudo class colors:
+=====================================*/
+
+/* borders:
+=====================================*/
+@mixin border-radius($rad) {
+	-webkit-border-radius: $rad; 
+	-moz-border-radius: $rad; 
+	border-radius: $rad; 
+}
+

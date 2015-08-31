@@ -1,0 +1,3 @@
+threre is a bug - i need to fix the previous_exercise_sets_h function for the view of the exercises and workouts page - I updated the original one to ustilize workout_log_id - which won't work for those views.  I left the old code in the previous_exercise_sets_h function - just take that code and create a whole nother function that did exactly what it did before. 
+
+
